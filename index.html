@@ -19,8 +19,35 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <!-- Jumbotron Header -->
     <div class="py-2 jumbotron bg-dark text-white">
       <h1 class="text-center display-4">Weather Dashboard</h1>
+    </div>
+    <!-- Card for the search field -->
+    <div class="card" style="width: 20rem;">
+      <div class="card-body">
+        <div class="input-group mb-3">
+          <h5>Search for a City:</h5>
+          <div class="container">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="ex. Phoenix"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                Button
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
