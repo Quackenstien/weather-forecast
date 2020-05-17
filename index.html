@@ -15,6 +15,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Hello, world!</title>
   </head>
@@ -24,7 +25,7 @@
       <h1 class="text-center display-4">Weather Dashboard</h1>
     </div>
     <!-- Card for the search field -->
-    <div class="card" style="width: 20rem;">
+    <div class="card" id="main-card" style="width: 20rem;">
       <div class="card-body">
         <div class="input-group mb-3">
           <h5>Search for a City:</h5>
@@ -44,6 +45,14 @@
               >
                 Button
               </button>
+            </div>
+            <!-- List items to populate when city is searched -->
+            <div class="card width-100%">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
             </div>
           </div>
         </div>
