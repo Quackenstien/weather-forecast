@@ -24,16 +24,15 @@ $("#search-button").on("click", function () {
       console.log(response);
 
       // Transfer content to HTML
-      // $(".city").html("<h1>" + response.name + " Weather Details</h1>");
+      $("#city").text("Weather Details about " + response.name);
       // $(".wind").text("Wind Speed: " + response.wind.speed);
       // $(".humidity").text("Humidity: " + response.main.humidity);
 
       // Convert the temp to fahrenheit
-      // var tempF = (response.main.temp - 273.15) * 1.8 + 32;
+      var tempF = (response.main.temp - 273.15) * 1.8 + 32;
 
       // // add temp content to html
-      // $(".temp").text("Temperature (K) " + response.main.temp);
-      // $(".tempF").text("Temperature (F) " + tempF.toFixed(2));
+      $("#temp-display").text("Temperature (F) " + tempF.toFixed(2));
 
       // Log the data in the console as well
       // console.log("Wind Speed: " + response.wind.speed);
