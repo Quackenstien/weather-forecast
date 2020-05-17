@@ -25,39 +25,44 @@
       <h1 class="text-center display-4">Weather Dashboard</h1>
     </div>
     <!-- Card for the search field -->
-    <div class="card" id="main-card" style="width: 20rem;">
-      <div class="card-body">
-        <div class="input-group mb-3">
-          <h5>Search for a City:</h5>
-          <div class="container">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="ex. Phoenix"
-              aria-label="Recipient's username"
-              aria-describedby="button-addon2"
-            />
-            <div class="input-group-append">
-              <button
-                class="btn btn-outline-secondary"
-                type="button"
-                id="button-addon2"
-              >
-                Button
-              </button>
-            </div>
-            <!-- List items to populate when city is searched -->
-            <div class="card width-100%">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
+    <div class="row">
+      <div class="card col-md-3 mr-3" id="main-card" style="width: 20rem;">
+        <div class="card-body">
+          <div class="input-group mb-3">
+            <h5>Search for a City:</h5>
+            <div class="container">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="ex. Phoenix"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <div class="input-group-append">
+                <button type="button" class="btn btn-primary">Search</button>
+              </div>
+              <!-- List items to populate when city is searched -->
+              <div class="card width-100%">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Card for populated data to display -->
+      <div class="card col-md-8 width-100%">
+        <div class="card-body">
+          <h3 class="card-title">Card title</h3>
+          <br />
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        </div>
+      </div>
     </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script
