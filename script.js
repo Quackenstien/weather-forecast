@@ -56,3 +56,10 @@ $("#search-button").on("click", function (e) {
       });
     });
 });
+
+//   var cityInfo = response + result;
+
+//   for (let i = 0; i < cityInfo.length; i++) {
+//     var listEl = $("<li>");
+//     $("#listUl").prepend(listEl);
+//   }
