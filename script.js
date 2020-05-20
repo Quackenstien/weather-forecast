@@ -40,7 +40,7 @@ $("#search-button").on("click", function (e) {
       var lon = response.coord.lon;
       var lat = response.coord.lat;
       var uvIndex =
-        "http://api.openweathermap.org/data/2.5/uvi?appid=" +
+        "https://api.openweathermap.org/data/2.5/uvi?appid=" +
         APIKey +
         "&lat=" +
         lat +
